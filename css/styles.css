@@ -506,6 +506,8 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Backdrop */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -538,6 +540,7 @@ a {
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 72px 24px 24px 24px;
 }
 
 .backdrop:not(.is-open) .modal {
@@ -547,15 +550,133 @@ a {
 
 .modal-icon {
   fill: #2e2f42;
+  width: 8px;
+  height: 8px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon:hover,
+.modal-icon:focus {
+  fill: #ffffff;
 }
 
 .btn-modal {
   position: absolute;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   background-color: #e7e9fc;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.text-modal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  /* margin-top: 72px; */
+}
+
+.label-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  display: flex;
+  margin-bottom: 4px;
+}
+
+.input-block {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  outline: transparent;
+  border: 1px solid #8e8f99;
+  padding-left: 38px;
+}
+
+.input-block::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.modal-field {
+  margin-bottom: 8px;
+}
+
+.model-icon {
+  fill: #2e2f42;
+  position: absolute;
+  left: 16px;
+  top: 8px;
+}
+
+.model-input-wrap {
+  position: relative;
+}
+
+.input-block:focus,
+.input-block:hover {
+  border-color: #4d5ae5;
+}
+
+.input-block:focus,
+.input-block:hover + .model-icon {
+  fill: #4d5ae5;
+}
+
+.backdrop-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+
+.model-textarea {
+  width: 100%;
+  height: 138px;
+  border-radius: 4px;
+  outline: transparent;
+  border: 1px solid #8e8f99;
+  padding: 8px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  resize: none;
 }
