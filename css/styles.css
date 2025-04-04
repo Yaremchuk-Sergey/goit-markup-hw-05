@@ -650,7 +650,7 @@ a {
 
 .input-block:focus,
 .input-block:hover + .model-icon {
-  fill: #4d5ae5;
+  fill: #ffffff;
 }
 
 .backdrop-btn {
