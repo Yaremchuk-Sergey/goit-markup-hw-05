@@ -582,6 +582,7 @@ a {
 .btn-modal:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
 
 .text-modal {
@@ -598,10 +599,10 @@ a {
 .label-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  display: flex;
+  display: block;
   margin-bottom: 4px;
 }
 
@@ -612,6 +613,9 @@ a {
   outline: transparent;
   border: 1px solid #8e8f99;
   padding-left: 38px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-block::placeholder {
@@ -629,8 +633,10 @@ a {
 .model-icon {
   fill: #2e2f42;
   position: absolute;
+  top: 50%;
   left: 16px;
-  top: 8px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model-input-wrap {
@@ -664,6 +670,11 @@ a {
   display: block;
   margin: 0 auto;
 }
+
+/* .backdrop-btn:hover,
+.backdrop-btn:focus {
+  fill: #ffffff;
+} */
 
 .model-textarea {
   width: 100%;
