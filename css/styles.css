@@ -648,7 +648,10 @@ a {
   border-color: #4d5ae5;
 }
 
-.input-block:focus,
+.input-block:focus + .model-icon {
+  fill: #4d5ae5;
+}
+
 .input-block:hover + .model-icon {
   fill: #4d5ae5;
 }
