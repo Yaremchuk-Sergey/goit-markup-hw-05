@@ -646,11 +646,14 @@ a {
 .input-block:focus,
 .input-block:hover {
   border-color: #4d5ae5;
-  fill: #ffffff;
 }
 
-.input-block:focus,
+/* .input-block:focus,
 .input-block:hover + .model-icon {
+  fill: #4d5ae5;
+} */
+
+class-input:focus-within + .class-icon {
   fill: #4d5ae5;
 }
 
