@@ -643,8 +643,8 @@ a {
   position: relative;
 }
 
-.input-block:focus,
-.input-block:hover {
+.input-block:focus .model-icon,
+.input-block:hover .model-icon {
   border-color: #4d5ae5;
 }
 
