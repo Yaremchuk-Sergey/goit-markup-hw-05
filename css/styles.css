@@ -657,6 +657,10 @@ class-input:focus-within + .class-icon {
   fill: #4d5ae5;
 }
 
+class-input:hover-within + .class-icon {
+  fill: #4d5ae5;
+}
+
 .backdrop-btn {
   font-weight: 500;
   font-size: 16px;
