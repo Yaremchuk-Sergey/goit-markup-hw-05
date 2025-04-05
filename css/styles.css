@@ -582,7 +582,7 @@ a {
 .btn-modal:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  /* fill: #ffffff; */
 }
 
 .text-modal {
