@@ -643,15 +643,15 @@ a {
   position: relative;
 }
 
-.input-block:focus .model-icon,
-.input-block:hover .model-icon {
+.input-block:focus,
+.input-block:hover {
   border-color: #4d5ae5;
 }
 
-/* .input-block:focus,
+.input-block:focus,
 .input-block:hover + .model-icon {
   fill: #4d5ae5;
-} */
+}
 
 class-input:focus-within + .class-icon {
   fill: #4d5ae5;
