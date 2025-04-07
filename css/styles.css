@@ -571,6 +571,10 @@ a {
 
 /* Backdrop */
 
+a {
+  text-decoration: none;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
