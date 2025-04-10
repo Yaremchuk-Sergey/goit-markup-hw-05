@@ -90,7 +90,12 @@
       <section class="page-main">
         <div class="container container-heading-button">
           <h1 class="heading">Effective Solutions for Your Business</h1>
-          <button class="button">Order Service</button>
+          <button
+            class="button"
+            data-modal-open
+          >
+            Order Service
+          </button>
         </div>
       </section>
       <section class="page-main-two">
@@ -677,11 +682,15 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div
+      class="backdrop is-open"
+      data-modal
+    >
       <div class="modal">
         <button
           class="btn-modal"
           type="button"
+          data-modal-close
         >
           <svg
             class="modal-icon"
@@ -807,5 +816,6 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
